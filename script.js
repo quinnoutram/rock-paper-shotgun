@@ -15,9 +15,13 @@ let playerWins = 0
 
 function check(){
     if (playerWins === 5){
+    computerWins = 0
+    playerWins = 0
     console.log("You saved humanity!")
     return
 } else if (computerWins === 5){
+    computerWins = 0
+    playerWins = 0
     console.log("Everyone died...")
     return
 } else{
