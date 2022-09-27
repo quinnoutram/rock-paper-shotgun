@@ -5,12 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <meta name="viewport" content="user-scalable = yes">
 </head>
 <body>
-    <h1>Rock Paper Scissors</h1>
-    <h2>Shotgun</h2>
+<div class="title">
+    <h1 class="brown">Bear</h1>
+    <h1 class="grey">Ninja</h1>
+    <h1 class="red">Hunter</h1>
+</div>
     
+    <h2>First to 5 | You versus the computer | Click to play</h2>
+    <div class="rules">
+        <ul>
+            <li> <span class=brown>Bear</span> beats <span class=grey>Ninja</span></li>
+            <li> <span class=red>Hunter</span> beats <span class=brown>Bear</span></li>
+            <li> <span class=grey>Ninja</span> beats <span class=red>Hunter</span></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="boxed" id="bear"><img class="img" src="./images/bear-removebg-preview.png"></div>
+        <div class="boxed" id="hunter" ><img class="img" src="./images/hunter-removebg-preview.png"></div>
+        <div class="boxed" id="ninja"><img class="img" src="./images/ninja-removebg-preview.png"></div>
+    </div>
+    <div class="results">
+        <div class="computer"><p id="computer">Computer Choice</p><img id="computerCross" src="./images/cross.png"></div>
+        <div class="score"><p id="counter">Computer 0 - 0 User</p><p id="round">Round - 0</p><p id="lastWin">Last round won by - N/A</p></div>
+        <div class="player"><p id="user">User Choice</p><img id="playerCross" src="./images/cross.png"></div>
+    </div>
 </body>
 </html>
